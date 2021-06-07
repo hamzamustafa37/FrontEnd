@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+#main{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Content/img/hero-bg.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main:before{
+  
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(232, 237, 234, 0.6);
+  font-weight: bold;
+
+}
+.change{
+  color: #0563bb;
+}
+h2{
+  
+    width:0ch;
+    overflow: hidden;
+   
+    white-space: nowrap;
+  animation: text 5s infinite;
+  font-family: sans-serif;
+
+}
+#content-head h1{
+    font-weight: bold;
+    font-size: 5rem;
+    color:rgba(58, 58, 52, 1);
+
+}
+.section{
+  padding-top:70px;
+ 
+}
+.section .heading{
+ text-align: center;
+ color:black;
+ margin-bottom: 40px;
+}
+
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 13ch;
+    }
+}
+#header{
+    z-index:1;
+}
+.nav-icons{
+  margin-top:5px;
+}
+
+.nav-icons ul>li{
+    background-color: #ecf0f1;
+  border:1px solid #bdc3c7;
+padding:15px;
+list-style: none;
+border-radius: 100px;
+  margin-top:5px;
+    z-index:1;
+  }
+ ul>li i{
+     color:'#0563bb';
+ }
+ .section .section-head{
+  background: #0563bb;
+  display: block;
+  height: 5px;
+  border-radius:20px;
+  width: 60px;
+}
+.section-head .line2::after{
+  background: #bdc3c7;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  z-index: -1;
+  top: 38.5%;
+  left: 48%;
+  width: 180px;
+}
+
+.image-container{
+  background-color: black;
+}
+#skillsetline{
+  top:96%;
+}
+.container p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content{
+  margin-top:20px;
+  text-align: center;
+  
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.image-container img {
+background-size: cover;
+
+}
+
+.resume{
+  margin-top: 20px auto;
+
+}
+#info-container ul>li{
+  background-color: #ecf0f1;
+  border:1px solid #bdc3c7;
+padding:15px;
+list-style: none;
+border-radius: 100px;
+  margin-top:5px;
+  
+}
+.resume-lis h4{
+  color: #0563bb;
+}
+.resume-title h4{
+  color:#0563bb;
+}
+.section .section-head-skill{
+  background: #0563bb;
+  display: block;
+  height: 5px;
+  border-radius:20px;
+  width: 60px;
+}
+.section-head-skill .line2-skill::after{
+  background: #bdc3c7;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  z-index: -1;
+  top: 93%;
+    left: 42%;
+  width: 180px;
+}
+footer{
+  margin:10px;
+  padding:20px;
+}
+.heading-skill{
+  text-align: center;
+}
+.resume-title h3{
+  font-size: bold;
+}
+
+.resume-lis ul li{
+margin: 10px;
+font-size: small;
+}
+
+#skills-container{
+  margin-top: 10px;
+}
+#skills-container .prog-skill h6 span{
+ float:right
+
+}
+.prog-skill{
+  margin-top: 40px;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;}
+
+@media screen and (min-width:992px) {
+  body{
+    background-image: cover;
+  }
+  .section-head .line2::after {
+    left: 42%;
+}
+.section-head-skill .line2-skill::after{
+  left: 42%;
+}
+}
+@media screen and (max-width:768px) {
+body{
+  background-image: cover;
+}
+  .section-head .line2::after {
+    left: 36%;
+
+}
+.section-head-skill .line2-skill::after{
+  left:38%;
+}
+#content-head h1{
+  font-weight: bold;
+  font-size: 30px;
+  color:rgba(58, 58, 52, 1);
+}
+#content-head h2{
+  font-size: 20px;
+  color:rgba(58, 58, 52, 1);
+}
+.nav-icons{
+  display: none;
+}
+}
+@media screen and (max-width: 360px) {
+  body{
+    background-image: cover;
+  }
+  .section-head .line2::after {
+    left: 25%;
+    
+
+}
+
+.section-head-skill .line2-skill::after{
+  left:25%;
+}
+
+#content-head h1{
+  font-weight: bold;
+  font-size: 30px;
+  color:rgba(58, 58, 52, 1);
+}
+#content-head h2{
+  font-size: 20px;
+  color:rgba(58, 58, 52, 1);
+}
+}
